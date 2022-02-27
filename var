@@ -1,0 +1,19 @@
+region: "ap-south-1"
+
+#vpc
+ vpc_cidr: 10.10.0.0/24
+ vpc_name: "production_VPC"
+ 
+#subnet
+ subnet_name: "production-subnet"
+ subnet_cidr: 10.10.0.0/26
+ igw_name: "production_IGW"
+ 
+#route table name
+ route_name: "production_SG"
+ securitygroup_name: "production-SG"
+ ec2_tag: "production-Instance"
+ 
+#key storage location
+ ec2_key_directory: "/home/cloudknowledges/"
+ keypair_name: "production-key"
